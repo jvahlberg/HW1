@@ -29,11 +29,21 @@
     <br>
     <a href="https://www.reddit.com/r/ProgrammerHumor/comments/l7d8c9/code_blue/">Reddit post I got the meme from</a>
     <br>
+    <br>
     <button type="button" onclick="editPage()">Don't click the button!</button>
     <!-- script for button -->
     <script>
         function editPage() {
-            document.body.style.backgroundColor="aliceblue";
+            var isBisque = true;
+            document.querySelector("button").addEventListener("click", function(){
+                if(isBisque){
+                    document.body.style.background="aliceblue";
+                }
+                else {
+                    document.body.style.background="bisque";
+                }
+                isBisque = !isBisque;
+            })
         }
     </script>
 </body>
