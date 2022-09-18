@@ -29,6 +29,13 @@
     <br>
     <a href="https://www.reddit.com/r/ProgrammerHumor/comments/l7d8c9/code_blue/">Reddit post I got the meme from</a>
     <br>
-    <button type="button" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'">Don't click the button!</button>
+    <button type="button" onclick="rickRoll()">Don't click the button!</button>
+    <!-- script for button -->
+    <script>
+        function rickRoll() {
+            let vidPlayer = document.createElement("iframe")
+            vidPlayer.src = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+        }
+    </script>
 </body>
 </html>
